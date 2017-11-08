@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="60dp"
+    android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/start_button"
+            style="@style/MainButtonTheme"
+            android:text="START" />
+
+        <LinearLayout
+            android:id="@+id/game_attributes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/start_button">
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:text="GAME MODE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/TextViewTheme"
+                    android:text="SIZE:" />
+
+                <Spinner
+                    android:id="@+id/size_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@android:color/white"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/TextViewTheme"
+                    android:text="DIFFICULTY:" />
+
+                <Spinner
+                    android:id="@+id/difficulty_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@android:color/white"></Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/scores_button"
+            style="@style/MainButtonTheme"
+            android:text="TOP SCORES"
+            android:layout_toRightOf="@id/game_attributes"/>
+
+        <Button
+            android:id="@+id/quit_button"
+            style="@style/MainButtonTheme"
+            android:layout_toRightOf="@id/game_attributes"
+            android:layout_alignBottom="@id/game_attributes"
+            android:text="QUIT" />
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.manes.nikolas.memorygame.GameActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_11"
+            style="@style/ButtonSmallTheme" />
+
+        <Button
+            android:id="@+id/button_12"
+            style="@style/ButtonSmallTheme"
+            android:layout_toRightOf="@id/button_11" />
+
+        <Button
+            android:id="@+id/button_13"
+            style="@style/ButtonSmallTheme"
+            android:layout_toRightOf="@id/button_12" />
+
+        <Button
+            android:id="@+id/button_14"
+            style="@style/ButtonSmallTheme"
+            android:layout_toRightOf="@id/button_13" />
+
+        <Button
+            android:id="@+id/button_21"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_11" />
+
+        <Button
+            android:id="@+id/button_22"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_11"
+            android:layout_toRightOf="@id/button_21" />
+
+        <Button
+            android:id="@+id/button_23"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_11"
+            android:layout_toRightOf="@id/button_22" />
+
+        <Button
+            android:id="@+id/button_24"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_11"
+            android:layout_toRightOf="@id/button_23" />
+
+        <Button
+            android:id="@+id/button_31"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_21" />
+
+        <Button
+            android:id="@+id/button_32"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_21"
+            android:layout_toRightOf="@id/button_31" />
+
+        <Button
+            android:id="@+id/button_33"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_21"
+            android:layout_toRightOf="@id/button_32" />
+
+        <Button
+            android:id="@+id/button_34"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_21"
+            android:layout_toRightOf="@id/button_33" />
+
+        <Button
+            android:id="@+id/button_41"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_31" />
+
+        <Button
+            android:id="@+id/button_42"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_31"
+            android:layout_toRightOf="@id/button_41" />
+
+        <Button
+            android:id="@+id/button_43"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_31"
+            android:layout_toRightOf="@id/button_42" />
+
+        <Button
+            android:id="@+id/button_44"
+            style="@style/ButtonSmallTheme"
+            android:layout_below="@id/button_31"
+            android:layout_toRightOf="@id/button_43" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/TextViewTheme"
+                android:text="SCORE : 0000"/>
+            <TextView
+                style="@style/TextViewTheme"
+                android:text="MOVES LEFT: 10"/>
+            <TextView
+                style="@style/TextViewTheme"
+                android:text="LEVEL: 10"/>
+            <TextView
+                style="@style/TextViewTheme"
+                android:text="TILES REMAINING: 100"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/restart_icon"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

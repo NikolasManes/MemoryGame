@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.manes.nikolas.memorygame.GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:text="SCORE : 0000" />
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:text="LEVEL: 10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:gravity="bottom">
+            <TextView
+                style="@style/TextViewTheme"
+                android:text="MOVES LEFT: 10"/>
+
+            <TextView
+                style="@style/TextViewTheme"
+                android:text="TILES REMAINING: 100"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_11"
+            style="@style/ButtonMediumTheme" />
+
+        <Button
+            android:id="@+id/button_12"
+            style="@style/ButtonMediumTheme"
+            android:layout_toRightOf="@id/button_11" />
+
+        <Button
+            android:id="@+id/button_13"
+            style="@style/ButtonMediumTheme"
+            android:layout_toRightOf="@id/button_12" />
+
+        <Button
+            android:id="@+id/button_14"
+            style="@style/ButtonMediumTheme"
+            android:layout_toRightOf="@id/button_13" />
+
+        <Button
+            android:id="@+id/button_15"
+            style="@style/ButtonMediumTheme"
+            android:layout_toRightOf="@id/button_14" />
+
+
+        <Button
+            android:id="@+id/button_21"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_11" />
+
+        <Button
+            android:id="@+id/button_22"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_11"
+            android:layout_toRightOf="@id/button_21" />
+
+        <Button
+            android:id="@+id/button_23"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_11"
+            android:layout_toRightOf="@id/button_22" />
+
+        <Button
+            android:id="@+id/button_24"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_11"
+            android:layout_toRightOf="@id/button_23" />
+
+        <Button
+            android:id="@+id/button_25"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_11"
+            android:layout_toRightOf="@id/button_24" />
+        
+        <Button
+            android:id="@+id/button_31"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_21" />
+
+        <Button
+            android:id="@+id/button_32"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_21"
+            android:layout_toRightOf="@id/button_31" />
+
+        <Button
+            android:id="@+id/button_33"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_21"
+            android:layout_toRightOf="@id/button_32" />
+
+        <Button
+            android:id="@+id/button_34"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_21"
+            android:layout_toRightOf="@id/button_33" />
+
+        <Button
+            android:id="@+id/button_35"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_21"
+            android:layout_toRightOf="@id/button_34" />
+        
+        <Button
+            android:id="@+id/button_41"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_31" />
+
+        <Button
+            android:id="@+id/button_42"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_31"
+            android:layout_toRightOf="@id/button_41" />
+
+        <Button
+            android:id="@+id/button_43"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_31"
+            android:layout_toRightOf="@id/button_42" />
+
+        <Button
+            android:id="@+id/button_44"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_31"
+            android:layout_toRightOf="@id/button_43" />
+
+        <Button
+            android:id="@+id/button_45"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_31"
+            android:layout_toRightOf="@id/button_44" />
+        
+        <Button
+            android:id="@+id/button_51"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_41" />
+
+        <Button
+            android:id="@+id/button_52"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_41"
+            android:layout_toRightOf="@id/button_51" />
+
+        <Button
+            android:id="@+id/button_53"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_41"
+            android:layout_toRightOf="@id/button_52" />
+
+        <Button
+            android:id="@+id/button_54"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_41"
+            android:layout_toRightOf="@id/button_53" />
+
+        <Button
+            android:id="@+id/button_55"
+            style="@style/ButtonMediumTheme"
+            android:layout_below="@id/button_41"
+            android:layout_toRightOf="@id/button_54" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/restart_icon"
+            android:background="@color/colorPrimary"
+            />
+    </LinearLayout>
+</LinearLayout>
